@@ -6,7 +6,7 @@ from datetime import timedelta
 from typing import Final
 
 DOMAIN: Final = "blanco_cloud"
-VERSION: Final = "0.1.1"
+VERSION: Final = "1.0.0"
 
 CONF_SERIAL_NUMBER: Final = "serial_number"
 CONF_SERVICE_CODE: Final = "service_code"

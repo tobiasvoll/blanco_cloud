@@ -91,7 +91,7 @@ async def test_failed_update_makes_entities_unavailable(
     assert hass.states.get("sensor.choice_all_634_co2_remaining").state == "10"
 
     mock_client.get_device_stats.side_effect = BlancoConnectionError
-    freezer.tick(timedelta(minutes=5))
+    freezer.tick(timedelta(seconds=30))
     async_fire_time_changed(hass)
     await hass.async_block_till_done()
 

@@ -22,7 +22,7 @@ settings. For local Bluetooth control see [blanco_unit](https://github.com/Naili
 
 ## Entities
 
-The cloud is polled every 5 minutes. Entities are only created for values your device reports.
+The cloud is polled every 30 seconds. Entities are only created for values your device reports.
 
 | Entity | Description |
 | --- | --- |

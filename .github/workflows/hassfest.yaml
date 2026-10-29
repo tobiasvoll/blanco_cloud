@@ -1,0 +1,15 @@
+name: Validate with hassfest
+
+on:
+  # every target, so stacked pull requests get checked too
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v4"
+      - uses: home-assistant/actions/hassfest@master

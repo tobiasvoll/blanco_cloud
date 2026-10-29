@@ -1,0 +1,8 @@
+# Test against the minimum supported Home Assistant version. Keep both pins in
+# sync: pytest-homeassistant-custom-component pins one exact homeassistant
+# version.
+homeassistant==2026.6.0
+pytest-homeassistant-custom-component==0.13.336
+pytest
+pytest-cov
+blanco-smart-home-api-client==1.2.0

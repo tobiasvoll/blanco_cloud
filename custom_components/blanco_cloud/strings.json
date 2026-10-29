@@ -1,0 +1,85 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect a BLANCO device",
+        "description": "Turn on device data sharing for your device in the BLANCO UNIT app first. Then enter the serial number and service code shown in the app under Settings > Device information.",
+        "data": {
+          "serial_number": "Serial number",
+          "service_code": "Service code"
+        },
+        "data_description": {
+          "serial_number": "The serial number from Settings > Device information in the BLANCO UNIT app.",
+          "service_code": "The five digit service code from the same page."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Allow access again",
+        "description": "The BLANCO Cloud no longer accepts this installation. Turn on device data sharing in the BLANCO UNIT app again, then submit."
+      }
+    },
+    "error": {
+      "not_granted": "The BLANCO Cloud does not allow access to this device. Check the serial number and service code and turn on device data sharing in the BLANCO UNIT app.",
+      "unsupported_device": "This BLANCO device does not support the Smart Home API.",
+      "cannot_connect": "Could not connect to the BLANCO Cloud.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This device is already configured.",
+      "reauth_successful": "Access was granted again."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "child_protect": {
+        "name": "Child lock"
+      },
+      "absence_mode_active": {
+        "name": "Absence mode"
+      }
+    },
+    "sensor": {
+      "co2_rest": {
+        "name": "CO2 remaining"
+      },
+      "filter_rest": {
+        "name": "Filter remaining"
+      },
+      "set_point_cooling": {
+        "name": "Cooling temperature"
+      },
+      "set_point_heating": {
+        "name": "Heating temperature"
+      },
+      "water_today": {
+        "name": "Water today"
+      },
+      "still_water_today": {
+        "name": "Still water today"
+      },
+      "medium_water_today": {
+        "name": "Medium water today"
+      },
+      "classic_water_today": {
+        "name": "Classic water today"
+      },
+      "hot_water_today": {
+        "name": "Hot water today"
+      },
+      "errors": {
+        "name": "Messages"
+      },
+      "last_online": {
+        "name": "Last online"
+      }
+    }
+  },
+  "exceptions": {
+    "access_revoked": {
+      "message": "The BLANCO Cloud no longer allows access to the device."
+    },
+    "update_failed": {
+      "message": "Could not fetch the data from the BLANCO Cloud: {error}"
+    }
+  }
+}
